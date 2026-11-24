@@ -1,0 +1,28 @@
+meta {
+  name: Criar jogo
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/jogos
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "titulo": "Jogo Bruno",
+    "genero": "Aventura",
+    "ano_lancamento": 2024,
+    "estudio_id": {{estudioBaseId}}
+  }
+}
+
+assert {
+  res.status: eq 201
+}
+
+script:post-response {
+  bru.setVar("jogoId", res.body.id);
+}

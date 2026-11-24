@@ -1,0 +1,60 @@
+Estudios/Criar estudio (201 Created) - 57 ms
+Assertions
+   ✓ res.status: eq 201
+Estudios/Listar estudios (200 OK) - 3 ms
+Assertions
+   ✓ res.status: eq 200
+Estudios/Buscar estudio por id (200 OK) - 2 ms
+Assertions
+   ✓ res.status: eq 200
+Estudios/Atualizar estudio (200 OK) - 4 ms
+Assertions
+   ✓ res.status: eq 200
+Estudios/Excluir estudio (200 OK) - 3 ms
+Assertions
+   ✓ res.status: eq 200
+Desenvolvedores/Criar desenvolvedor (201 Created) - 4 ms
+Assertions
+   ✓ res.status: eq 201
+Desenvolvedores/Listar desenvolvedores (200 OK) - 3 ms
+Assertions
+   ✓ res.status: eq 200
+Desenvolvedores/Buscar desenvolvedor por id (200 OK) - 3 ms
+Assertions
+   ✓ res.status: eq 200
+Desenvolvedores/Atualizar desenvolvedor (200 OK) - 5 ms
+Assertions
+   ✓ res.status: eq 200
+Desenvolvedores/Excluir desenvolvedor (200 OK) - 3 ms
+Assertions
+   ✓ res.status: eq 200
+Jogos/Criar jogo (201 Created) - 6 ms
+Assertions
+   ✓ res.status: eq 201
+Jogos/Listar jogos (200 OK) - 5 ms
+Assertions
+   ✓ res.status: eq 200
+Jogos/Buscar jogo por id (200 OK) - 2 ms
+Assertions
+   ✓ res.status: eq 200
+Jogos/Atualizar jogo (200 OK) - 4 ms
+Assertions
+   ✓ res.status: eq 200
+Jogos/Excluir jogo (200 OK) - 3 ms
+Assertions
+   ✓ res.status: eq 200
+
+📊 Execution Summary
+┌───────────────┬────────────────┐
+│ Metric        │     Result     │
+├───────────────┼────────────────┤
+│ Status        │     ✓ PASS     │
+├───────────────┼────────────────┤
+│ Requests      │ 15 (15 Passed) │
+├───────────────┼────────────────┤
+│ Tests         │      0/0       │
+├───────────────┼────────────────┤
+│ Assertions    │     15/15      │
+├───────────────┼────────────────┤
+│ Duration (ms) │      674       │
+└───────────────┴────────────────┘

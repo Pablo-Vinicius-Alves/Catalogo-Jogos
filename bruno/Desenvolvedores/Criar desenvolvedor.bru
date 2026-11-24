@@ -1,0 +1,32 @@
+meta {
+  name: Criar desenvolvedor
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/desenvolvedores
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nickname": "{{nick}}",
+    "nome": "Dev Bruno",
+    "estudio_id": {{estudioBaseId}}
+  }
+}
+
+script:pre-request {
+  // nickname e UNIQUE: gera um novo a cada execucao
+  bru.setVar("nick", "dev_" + Date.now());
+}
+
+assert {
+  res.status: eq 201
+}
+
+script:post-response {
+  bru.setVar("desenvolvedorId", res.body.id);
+}

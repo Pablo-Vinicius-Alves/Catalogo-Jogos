@@ -1,0 +1,42 @@
+
+> catalogo-jogos-api@1.0.0 test
+> node --test --test-reporter=spec testes/api.test.js
+
+▶ DESENVOLVEDORES (5 endpoints)
+  ✔ POST /desenvolvedores -> 201 (7.923648ms)
+  ✔ POST /desenvolvedores com nickname repetido -> 409 (2.649628ms)
+  ✔ POST /desenvolvedores com estudio inexistente -> 400 (1.806584ms)
+  ✔ POST /desenvolvedores com estudio_id como texto -> 400 (1.611814ms)
+  ✔ GET /desenvolvedores -> 200 (traz nome do estudio) (1.857301ms)
+  ✔ GET /desenvolvedores/:id -> 200 (2.260646ms)
+  ✔ GET /desenvolvedores/999999 -> 404 (1.287797ms)
+  ✔ PUT /desenvolvedores/:id -> 200 (6.39877ms)
+  ✔ PUT /desenvolvedores/999999 -> 404 (1.435918ms)
+  ✔ DELETE /estudios/:id com desenvolvedor vinculado -> 409 (1.715271ms)
+  ✔ DELETE /desenvolvedores/:id -> 200 (1.698479ms)
+  ✔ DELETE /desenvolvedores/999999 -> 404 (1.227866ms)
+✔ DESENVOLVEDORES (5 endpoints) (37.043621ms)
+▶ JOGOS (5 endpoints)
+  ✔ POST /jogos -> 201 (2.086783ms)
+  ✔ POST /jogos com ano invalido -> 400 (1.214024ms)
+  ✔ POST /jogos com estudio inexistente -> 400 (2.249976ms)
+  ✔ POST /jogos sem titulo -> 400 (1.203252ms)
+  ✔ GET /jogos -> 200 (traz nome do estudio) (1.678991ms)
+  ✔ GET /jogos/:id -> 200 (1.457873ms)
+  ✔ GET /jogos/999999 -> 404 (2.852497ms)
+  ✔ PUT /jogos/:id -> 200 (3.082527ms)
+  ✔ PUT /jogos/999999 -> 404 (1.474247ms)
+  ✔ DELETE /jogos/:id -> 200 (1.750338ms)
+  ✔ DELETE /jogos/999999 -> 404 (1.164511ms)
+✔ JOGOS (5 endpoints) (23.725808ms)
+▶ Rotas gerais
+  ✔ GET /rota-inexistente -> 404 (0.965651ms)
+✔ Rotas gerais (1.046636ms)
+ℹ tests 38
+ℹ suites 4
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 297.779618

@@ -1,0 +1,15 @@
+meta {
+  name: Listar jogos
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/jogos
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 200
+}

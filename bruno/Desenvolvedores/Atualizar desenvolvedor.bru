@@ -1,0 +1,23 @@
+meta {
+  name: Atualizar desenvolvedor
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/desenvolvedores/{{desenvolvedorId}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nickname": "{{nick}}",
+    "nome": "Dev Bruno Atualizado",
+    "estudio_id": {{estudioBaseId}}
+  }
+}
+
+assert {
+  res.status: eq 200
+}

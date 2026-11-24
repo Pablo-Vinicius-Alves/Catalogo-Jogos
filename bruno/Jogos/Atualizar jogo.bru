@@ -1,0 +1,24 @@
+meta {
+  name: Atualizar jogo
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/jogos/{{jogoId}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "titulo": "Jogo Bruno Atualizado",
+    "genero": "RPG",
+    "ano_lancamento": 2025,
+    "estudio_id": {{estudioBaseId}}
+  }
+}
+
+assert {
+  res.status: eq 200
+}
